@@ -5,7 +5,7 @@
     <nav class="navbar navbar-expand-md navbar-dark">
         <div class="container">
             <div class="logo">
-                <a href="home.html"><img src="favicon/LogoFootprint.png"></a>
+                <a href="{{ asset('/') }}"><img src="favicon/LogoFootprint.png"></a>
             </div>
             <h4 class="logo_name d-inline-flex p-2 bd-highlight">Iz <br>Kaldyru</h4>
             <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -35,6 +35,15 @@
         </div>
     </header>
 </div>
+
+
+{{--<div class="container-fluid">
+    <div class="banner-slider">
+        <a href="/"><img src="/img/back.jpg" class="banner1" style="border-radius:20px;" id="banner_1"></a>
+        <a href="/"><img src="/img/993012.jpg" class="banner2" style="border-radius:20px;" id="banner_2"></a>
+    </div>
+</div>--}}
+
 
 <header>
     <section class="our-product">
@@ -97,7 +106,7 @@
     </div>
 </div>
 
-<div>
+{{--<div>
     <section class="why_we">
         <div class="container-fluid alert row">
             <h1 class="section-title">Почему мы?</h1>
@@ -130,37 +139,13 @@
             </article>
         </div>
     </section>
-</div>
+</div>--}}
 
-<div class="sendForm container-fluid">
-    <h1 class="section-title">Давайте обсудим про ваш будущий сайт</h1>
-    <div class="alert">
-        <form action="sender.php" method="post">
-            <label class="inputForm"><input type="text" class="name form-control" name="name" placeholder="Ваше имя *" required></label>
-            <label class="inputForm"><input type="text" class="phone form-control" name="phone" placeholder="Ваш телефон *"></label>
-            <label class="inputForm"><input type="email" class="form-control" name="email" placeholder="Ваш E-mail *" required></label>
-            <button type="button" class="send-form btn btn-primary mb-2">Отправить форму</button>
-            <div class="status"></div>
-        </form>
-    </div>
-</div>
+@include('layouts.feedback')
 
-<footer class="container-fluid">
-    <div class="end-webList alert row">
-        <p class="footLogo"><img src="favicon/logotype-200x200.png"></p>
-        <ul class="social-icons">
-            <li><a class="social-icon-whatsapp" href="https://wa.me/77073751542?text=Здравствуйте,%20я%20заинтересован(a)%20в%20покупке%20ваших%20услуг!" target="_blank" rel="noopener"></a></li>
-            <li><a class="social-icon-phone" href="tel:+77073751542" rel="noopener"></a></li>
-            <li><a class="social-icon-envelope" href="mailto:azatbakyt8@gmail.com" rel="noopener"></a></li>
-            <li><a class="social-icon-github" href="https://github.com/cheburek404" target="_blank" rel="noopener"></a></li>
-        </ul>
-    </div>
-</footer>
+@include('layouts.footer')
 
-<script src="js/jquery.validate.min.js"></script>
-<script src="js/script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 @endsection
+
+
+
