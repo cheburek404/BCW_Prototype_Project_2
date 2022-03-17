@@ -6,6 +6,7 @@
             <li><a class="social-icon-phone" href="tel:+77073751542" rel="noopener"></a></li>
             <li><a class="social-icon-envelope" href="mailto:azatbakyt8@gmail.com" rel="noopener"></a></li>
             <li><a class="social-icon-github" href="https://github.com/cheburek404" target="_blank" rel="noopener"></a></li>
+            <li><a class="social-icon-linkedin" href="#" target="_blank" rel="noopener"></a></li>
         </ul>
     </div>
 </footer>

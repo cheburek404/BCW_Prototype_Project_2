@@ -106,6 +106,8 @@
     </div>
 </div>
 
+
+{{-- Why we? --}}
 {{--<div>
     <section class="why_we">
         <div class="container-fluid alert row">

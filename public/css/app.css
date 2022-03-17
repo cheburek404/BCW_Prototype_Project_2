@@ -46,12 +46,12 @@ li a{
     font-size: 18px;
     transition: all 0.3s cubic-bezier(0.33, 0.66, 0.66, 1); }
 li a:hover{
-    border-bottom: 2px solid #fc0d3d;
-    color: #fc0d3d;
+    border-bottom: 2px solid #960824;
+    color: #C90A30;
     transition: all 0.3s cubic-bezier(0.33, 0.66, 0.66, 1); }
 
 .phone{
-    color: #fc0d3d; }
+    color: #C90A30; }
 .phone:hover{
     color: white;
     border-bottom: 2px solid white; }
@@ -83,6 +83,7 @@ li a:hover{
     background-color: #375380;
     color: white;
     border: none;
+    background: linear-gradient(57deg, #E59DDD, #C90A30);
     border-radius: .8em; }
 
 .btn:hover,.btn.focus{
@@ -153,29 +154,26 @@ li a:hover{
     text-align: left; }
 
 .product hr{
-    color: darkblue;
+    color: darkorchid;
     margin: 10% 0 0 45%;
     height: 3px;
     width: 10%; }
 
 .our-product .card{
-    border: 3px solid #375380;
+    border: 3px;
+    box-shadow: 0 8px 24px 0 #D5D5D5;
+    transition: all 0.9s cubic-bezier(0.33, 0.66, 0.66, 1);
     width: 33%; }
-
 .our-product .card:hover{
-    box-shadow: 0 16px 36px 0 #B3B3B3;
+    box-shadow: 0 0 0 0;
+    border: 3px solid #000;
     transition: all 0.3s cubic-bezier(0.33, 0.66, 0.66, 1); }
-
+.our-product .card:hover .btn{
+    transition: background-color 3s;
+    background: linear-gradient(20deg, #E59DDD, #C90A30); }
 .our-product .btn{
-    background-color: #375380;
     line-height: 2.5;
     border-radius: 4em; }
-.our-product .btn:hover{
-    background-color: #21324D;
-    transform: none; }
-.our-product .card:hover .btn{
-    color: #fff;
-    box-shadow: 0 4px 10px 0 #95AACC; }
 
 
 /* --------------------------------- */
@@ -291,16 +289,15 @@ main section{
 
 .our-guarantee .btn{
     line-height: 3;
-    box-shadow: 0 10px 20px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 20px 8px rgba(0,0,0,0.2);
     width: 20%;
     text-transform: none;
     font-size: 1.1em;
-    background: var(--clr-accent, #C90A30);
     border-radius: 4em;
     margin: 15px 0 30px 40%; }
 
 .our-guarantee .btn:hover{
-    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+    background: linear-gradient(20deg, #E59DDD, #C90A30);
     color: #fff;
     transform: none; }
 
@@ -385,12 +382,13 @@ form .form-control{
     text-decoration: none;
     font-weight: 700;
     padding: 9px 12px;
-    background-color: #C90A30;
+    background: linear-gradient(57deg, #E59DDD, #C90A30);
     color: white;
     border: none;
     border-radius: .8em; }
 
 .send-btn:hover,.send-btn.focus{
+    background: linear-gradient(20deg, #E59DDD, #C90A30);
     background-color: #960824;
 }
 
@@ -445,6 +443,8 @@ footer .footLogo{
     background-image: url("../img/icon/envelope-alt-svgrepo-com.svg"); }
 .social-icons .social-icon-github::before {
     background-image: url("../img/icon/icons8-github.svg"); }
+.social-icons .social-icon-linkedin::before {
+    background-image: url("../img/icon/icons8-linkedin-2.svg"); }
 
 
 /* ---------------------------- */
